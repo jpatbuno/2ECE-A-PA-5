@@ -54,4 +54,4 @@ x_cramer = [ det(A1); det(A2); det(A3); det(A4) ] / det(A);
 
 To view the full code and executed outputs, open the MATLAB script file in this repository:
 
-* **[Buno_PA5.m]**
+* **[[Buno_PA5.m](https://github.com/jpatbuno/2ECE-A-PA-5/blob/main/Buno_PA5.m)]**
