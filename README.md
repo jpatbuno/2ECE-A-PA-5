@@ -13,13 +13,16 @@ Evaluating and comparing matrix transpose operators (`transpose(A)`, `A'`, and `
 * **Key Concept:** Real matrix entries are unaffected by complex conjugation, whereas complex entries undergo imaginary sign negation under the apostrophe (`'`) operator.
 * **Example:**
 
-To define a complex matrix Z
+To define a complex matrix Z:
+
 Z = [2+3i, -1+4i, 5-2i; -3+i, 6, 2+5i];
 
-A Non-conjugate transpose (preserves imaginary signs)
+### A Non-conjugate transpose (preserves imaginary signs)
+
 Z_transpose = Z.';  or transpose(Z)
 
-A Complex-conjugate transpose (flips imaginary signs)
+### A Complex-conjugate transpose (flips imaginary signs)
+
 Z_hermitian = Z'; the 2+3i becomes 2-3i
 
 
@@ -33,12 +36,18 @@ without using `for` loops or `if` conditional statements.
 * **Example:**
 
 Extract columns via slicing to construct Cramer sub-matrices:
+
 A1 = [ b, A(:, 2:4) ];           Replaces column 1 with b
+
 A2 = [ A(:, 1), b, A(:, 3:4) ];  Replaces column 2 with b
+
 A3 = [ A(:, 1:2), b, A(:, 4) ];  Replaces column 3 with b
+
 A4 = [ A(:, 1:3), b ];           Replaces column 4 with b
 
+
 Vectorized solution via determinant ratios:
+
 x_cramer = [ det(A1); det(A2); det(A3); det(A4) ] / det(A);
 
 ## 📥 Access the Script
