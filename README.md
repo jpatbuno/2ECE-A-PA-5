@@ -4,7 +4,6 @@
 
 This repository contains the MATLAB script solution for **Experiment 5**, demonstrating matrix creation, real and complex transpose operations, and the solution of linear equations.
 
----
 
 ## A. Transpose Operations Problem
 
@@ -23,9 +22,6 @@ Z_transpose = Z.';  or transpose(Z)
 A Complex-conjugate transpose (flips imaginary signs)
 Z_hermitian = Z'; the 2+3i becomes 2-3i
 
-```
-
----
 
 ## B. Linear System Solver Problem
 
@@ -44,10 +40,6 @@ A4 = [ A(:, 1:3), b ];           Replaces column 4 with b
 
 Vectorized solution via determinant ratios:
 x_cramer = [ det(A1); det(A2); det(A3); det(A4) ] / det(A);
-
-```
-
----
 
 ## 📥 Access the Script
 
